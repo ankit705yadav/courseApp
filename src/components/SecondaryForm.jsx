@@ -7,7 +7,6 @@ import { BsQuestionCircle } from "react-icons/bs";
 
 const Wrapper = styled.div`
   border: 2px solid grey;
-  margin: 22px;
 `;
 
 const Container1 = styled.div`

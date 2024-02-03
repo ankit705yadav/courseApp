@@ -5,7 +5,7 @@ const Wrapper = styled.div`
   justify-content: space-around;
   align-items: start;
   flex-direction: column;
-  padding: 30px;
+  padding: 20px;
   gap: 15px;
 `;
 

@@ -25,19 +25,13 @@ import { FaListUl } from "react-icons/fa";
 import { IoMailUnreadOutline } from "react-icons/io5";
 import { BiZoomIn } from "react-icons/bi";
 
-const Wrapper = styled.div`
-  display: flex;
-  margin: auto;
-  padding: 15px;
-`;
-
 const Nav = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: start;
   border: 1.5px solid grey;
   border-radius: 7px;
-  width: 298px;
+  width: 255px;
 
   .logout {
     color: red;
@@ -76,11 +70,11 @@ const ProfileInfo = styled.div`
 `;
 
 const Info = styled.p`
-  font-sixe: 14px;
+  font-size: 14px;
 `;
 
 const Online = styled.p`
-  font-sixe: 11px;
+  font-size: 11px;
   color: #36c236;
 `;
 
@@ -93,9 +87,11 @@ const NavItem = styled.div`
   display: flex;
   margin: 10px 0px;
   padding-left: 1.5rem;
-  font-size: 24px;
   color: grey;
   border: 3px solid white;
+  :first-child {
+    font-size: 24px;
+  }
   &:hover {
     border-left: 3px solid grey;
   }
@@ -107,146 +103,142 @@ const NavItem = styled.div`
 
 const NavItemTitle = styled.p`
   margin-left: 11px;
-  font-size: 15px;
+  font-size: 14px;
   padding-top: 3px;
 `;
 
 function Navbar() {
   return (
-    <>
-      <Wrapper>
-        <Nav>
-          <NavHeader>Course app</NavHeader>
-          <Profile>
-            <ProfileImg src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
-            <ProfileInfo>
-              <Info>Student</Info>
-              <Info>9919696764</Info>
-              <Online>Online</Online>
-            </ProfileInfo>
-          </Profile>
-          <NavTitle>Student</NavTitle>
-          <NavItem>
-            <RxDashboard />
-            <NavItemTitle>Dashboard</NavItemTitle>
-          </NavItem>
-          <NavItem>
-            <IoBookOutline />
-            <NavItemTitle>Courses</NavItemTitle>
-          </NavItem>
-          <NavItem>
-            <PiPencilSimpleLight />
-            <NavItemTitle>Homework</NavItemTitle>
-          </NavItem>
-          <NavItem>
-            <BsTicket />
-            <NavItemTitle>CRM Help Ticket</NavItemTitle>
-          </NavItem>
-          <NavItem>
-            <FiMessageSquare />
-            <NavItemTitle>CRM Messages</NavItemTitle>
-          </NavItem>
-          <NavItem className="logout">
-            <MdLogout />
-            <NavItemTitle>Logout</NavItemTitle>
-          </NavItem>
+    <Nav>
+      <NavHeader>Course app</NavHeader>
+      <Profile>
+        <ProfileImg src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+        <ProfileInfo>
+          <Info>Student</Info>
+          <Info>9919696764</Info>
+          <Online>Online</Online>
+        </ProfileInfo>
+      </Profile>
+      <NavTitle>Student</NavTitle>
+      <NavItem>
+        <RxDashboard />
+        <NavItemTitle>Dashboard</NavItemTitle>
+      </NavItem>
+      <NavItem>
+        <IoBookOutline />
+        <NavItemTitle>Courses</NavItemTitle>
+      </NavItem>
+      <NavItem>
+        <PiPencilSimpleLight />
+        <NavItemTitle>Homework</NavItemTitle>
+      </NavItem>
+      <NavItem>
+        <BsTicket />
+        <NavItemTitle>CRM Help Ticket</NavItemTitle>
+      </NavItem>
+      <NavItem>
+        <FiMessageSquare />
+        <NavItemTitle>CRM Messages</NavItemTitle>
+      </NavItem>
+      <NavItem className="logout">
+        <MdLogout />
+        <NavItemTitle>Logout</NavItemTitle>
+      </NavItem>
 
-          <NavTitle>Superadmin</NavTitle>
-          <NavItem>
-            <RxDashboard />
-            <NavItemTitle>Dashboard</NavItemTitle>
-          </NavItem>
-          <NavItem>
-            <IoBookOutline />
-            <NavItemTitle>Courses</NavItemTitle>
-          </NavItem>
-          <NavItem>
-            <HiOutlineUserGroup />
-            <NavItemTitle>Batch</NavItemTitle>
-          </NavItem>
-          <NavItem>
-            <PiStudent />
-            <NavItemTitle>Student Batch</NavItemTitle>
-          </NavItem>
-          <NavItem>
-            <GiBookshelf />
-            <NavItemTitle>Upcoming BCI Courses</NavItemTitle>
-          </NavItem>
-          <NavItem>
-            <SlCalender />
-            <NavItemTitle>BCI Calendar</NavItemTitle>
-          </NavItem>
-          <NavItem>
-            <FaRegNoteSticky />
-            <NavItemTitle>Technical Notes</NavItemTitle>
-          </NavItem>
-          <NavItem>
-            <TbFileInvoice />
-            <NavItemTitle>Student Bulk Invoice</NavItemTitle>
-          </NavItem>
-          <NavItem>
-            <MdOutlinePayment />
-            <NavItemTitle>Student Payment Info</NavItemTitle>
-          </NavItem>
-          <NavItem>
-            <MdOutlinePayments />
-            <NavItemTitle>Payment Overdue List</NavItemTitle>
-          </NavItem>
-          <NavItem>
-            <MdApproval />
-            <NavItemTitle>Replace approval Request</NavItemTitle>
-          </NavItem>
-          <NavItem>
-            <MdOutlineVideocam />
-            <NavItemTitle>Video Stream Approval Request</NavItemTitle>
-          </NavItem>
-          <NavItem>
-            <MdOutlinePhotoCamera />
-            <NavItemTitle>Partial Payment Approval Request</NavItemTitle>
-          </NavItem>
-          <NavItem>
-            <IoPersonAddOutline />
-            <NavItemTitle>Access Approval Request</NavItemTitle>
-          </NavItem>
-          <NavItem>
-            <LuFileSymlink />
-            <NavItemTitle>Nature Of Your Request</NavItemTitle>
-          </NavItem>
-          <NavItem>
-            <AiOutlineBank />
-            <NavItemTitle>Bank Details</NavItemTitle>
-          </NavItem>
-          <NavItem>
-            <FiPenTool />
-            <NavItemTitle>Registration</NavItemTitle>
-          </NavItem>
-          <NavItem>
-            <LuUserCheck />
-            <NavItemTitle>Add User</NavItemTitle>
-          </NavItem>
-          <NavItem>
-            <FaListUl />
-            <NavItemTitle>All User List</NavItemTitle>
-          </NavItem>
-          <NavItem>
-            <IoMailUnreadOutline />
-            <NavItemTitle>Mail Notification Configure</NavItemTitle>
-          </NavItem>
-          <NavItem>
-            <BsTicket />
-            <NavItemTitle>CRM Help Ticket</NavItemTitle>
-          </NavItem>
-          <NavItem>
-            <BiZoomIn />
-            <NavItemTitle>Zoom Configuration</NavItemTitle>
-          </NavItem>
-          <NavItem className="logout">
-            <MdLogout />
-            <NavItemTitle>Logout</NavItemTitle>
-          </NavItem>
-        </Nav>
-      </Wrapper>
-    </>
+      <NavTitle>Superadmin</NavTitle>
+      <NavItem>
+        <RxDashboard />
+        <NavItemTitle>Dashboard</NavItemTitle>
+      </NavItem>
+      <NavItem>
+        <IoBookOutline />
+        <NavItemTitle>Courses</NavItemTitle>
+      </NavItem>
+      <NavItem>
+        <HiOutlineUserGroup />
+        <NavItemTitle>Batch</NavItemTitle>
+      </NavItem>
+      <NavItem>
+        <PiStudent />
+        <NavItemTitle>Student Batch</NavItemTitle>
+      </NavItem>
+      <NavItem>
+        <GiBookshelf />
+        <NavItemTitle>Upcoming BCI Courses</NavItemTitle>
+      </NavItem>
+      <NavItem>
+        <SlCalender />
+        <NavItemTitle>BCI Calendar</NavItemTitle>
+      </NavItem>
+      <NavItem>
+        <FaRegNoteSticky />
+        <NavItemTitle>Technical Notes</NavItemTitle>
+      </NavItem>
+      <NavItem>
+        <TbFileInvoice />
+        <NavItemTitle>Student Bulk Invoice</NavItemTitle>
+      </NavItem>
+      <NavItem>
+        <MdOutlinePayment />
+        <NavItemTitle>Student Payment Info</NavItemTitle>
+      </NavItem>
+      <NavItem>
+        <MdOutlinePayments />
+        <NavItemTitle>Payment Overdue List</NavItemTitle>
+      </NavItem>
+      <NavItem>
+        <MdApproval />
+        <NavItemTitle>Replace approval Request</NavItemTitle>
+      </NavItem>
+      <NavItem>
+        <MdOutlineVideocam />
+        <NavItemTitle>Video Stream Approval Request</NavItemTitle>
+      </NavItem>
+      <NavItem>
+        <MdOutlinePhotoCamera />
+        <NavItemTitle>Partial Payment Approval Request</NavItemTitle>
+      </NavItem>
+      <NavItem>
+        <IoPersonAddOutline />
+        <NavItemTitle>Access Approval Request</NavItemTitle>
+      </NavItem>
+      <NavItem>
+        <LuFileSymlink />
+        <NavItemTitle>Nature Of Your Request</NavItemTitle>
+      </NavItem>
+      <NavItem>
+        <AiOutlineBank />
+        <NavItemTitle>Bank Details</NavItemTitle>
+      </NavItem>
+      <NavItem>
+        <FiPenTool />
+        <NavItemTitle>Registration</NavItemTitle>
+      </NavItem>
+      <NavItem>
+        <LuUserCheck />
+        <NavItemTitle>Add User</NavItemTitle>
+      </NavItem>
+      <NavItem>
+        <FaListUl />
+        <NavItemTitle>All User List</NavItemTitle>
+      </NavItem>
+      <NavItem>
+        <IoMailUnreadOutline />
+        <NavItemTitle>Mail Notification Configure</NavItemTitle>
+      </NavItem>
+      <NavItem>
+        <BsTicket />
+        <NavItemTitle>CRM Help Ticket</NavItemTitle>
+      </NavItem>
+      <NavItem>
+        <BiZoomIn />
+        <NavItemTitle>Zoom Configuration</NavItemTitle>
+      </NavItem>
+      <NavItem className="logout">
+        <MdLogout />
+        <NavItemTitle>Logout</NavItemTitle>
+      </NavItem>
+    </Nav>
   );
 }
 

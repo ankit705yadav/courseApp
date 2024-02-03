@@ -5,11 +5,13 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
   color: grey;
-  padding: 30px;
+  width: 100%;
 `;
 
 const SearchSection = styled.div`
+  border: 1px solid red;
   display: flex;
 `;
 
@@ -41,26 +43,24 @@ const SearchBtn = styled.button`
 `;
 
 const Profile = styled.img`
-  width: 46px;
-  height: 46px;
+  width: 35px;
+  height: 35px;
   object-fit: cover;
   border-radius: 50%;
 `;
 
 const TopSearch = () => {
   return (
-    <>
-      <Wrapper>
-        <SearchSection>
-          <InputContainer>
-            <CiSearch style={{ margin: "20px" }} />
-            <Input className="custom-input" placeholder="Search by Phone no." />
-          </InputContainer>
-          <SearchBtn>Search</SearchBtn>
-        </SearchSection>
-        <Profile src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
-      </Wrapper>
-    </>
+    <Wrapper>
+      <SearchSection>
+        <InputContainer>
+          <CiSearch style={{ margin: "20px" }} />
+          <Input className="custom-input" placeholder="Search by Phone no." />
+        </InputContainer>
+        <SearchBtn>Search</SearchBtn>
+      </SearchSection>
+      <Profile src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+    </Wrapper>
   );
 };
 
