@@ -5,7 +5,20 @@ import FormMaster from "./components/FormMaster";
 import SecondaryForm from "./components/SecondaryForm";
 
 export const App = () => {
-  return <SecondaryForm />;
+  return (
+    <>
+      <Navbar />
+      <>
+        <TopSearch />
+        <>
+          <FormMaster />
+          <>
+            <SecondaryForm />
+          </>
+        </>
+      </>
+    </>
+  );
 };
 
 export default App;

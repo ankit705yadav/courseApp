@@ -3,6 +3,7 @@ import { MdFormatBold } from "react-icons/md";
 import { MdFormatItalic } from "react-icons/md";
 import { TbListDetails } from "react-icons/tb";
 import { TbLayoutGridAdd } from "react-icons/tb";
+import { BsQuestionCircle } from "react-icons/bs";
 
 const Wrapper = styled.div`
   border: 2px solid grey;
@@ -12,6 +13,37 @@ const Wrapper = styled.div`
 const Container1 = styled.div`
   display: flex;
   gap: 12px;
+  padding: 8px 20px;
+`;
+
+const InnerContainer1 = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 22px;
+  border-right: 2px solid grey;
+  padding-right: 20px;
+  margin-right: 15px;
+`;
+
+const InnerContainer2 = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 22px;
+  border-left: 2px solid grey;
+  border-right: 2px solid grey;
+  padding: 0 20px;
+`;
+
+const MiddleContainer = styled.div`
+  margin: 0 auto;
+`;
+
+const DropDown = styled.select`
+  border: none;
+  background-color: white;
+  color: grey;
 `;
 
 const Container2 = styled.div`
@@ -24,52 +56,17 @@ const Container3 = styled.div`
   border-top: 2px solid grey;
 `;
 
-const TextFormat = styled.p`
+const TextFormat = styled.div`
+  display: flex;
+  justify-content: space-between;
   font-weight: bold;
   font-size: 13px;
 `;
 
-const Input = styled.select`
-  width: 100%;
-`;
-
-const InnerContainer1 = styled.div`
+const TextFormatRight = styled.div`
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  font-size: 22px;
-  border-right: 2px solid grey;
-  padding-right: 12px;
-  margin: 8px 0;
-`;
-
-const InnerContainer2 = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 22px;
-  border-left: 2px solid grey;
-  border-right: 2px solid grey;
-  padding: 0 12px;
-  margin: 8px 14px;
-`;
-
-const InnerContainer3 = styled.div`
-  display: flex;
-  border-left: 2px solid grey;
-  border-right: 2px solid grey;
-  padding: 0 12px;
-  margin: 8px 14px;
-`;
-
-const DropDown = styled.select`
-  border: none;
-  background-color: white;
-`;
-
-const DropDownOptions = styled.option`
-  display: flex;
-  justify-content: space-between;
+  gap: 8px;
 `;
 
 const SecondaryForm = () => {
@@ -82,21 +79,29 @@ const SecondaryForm = () => {
 
           <TbListDetails style={{ marginLeft: "55px" }} />
         </InnerContainer1>
+
         <InnerContainer2>
           <TbLayoutGridAdd />
           <TbLayoutGridAdd />
         </InnerContainer2>
 
-        <InnerContainer2>
+        <MiddleContainer></MiddleContainer>
+
+        <InnerContainer2 style={{ borderRight: "none" }}>
           <DropDown>
-            <DropDownOptions>Paragraph </DropDownOptions>
-            <DropDownOptions>Option 2</DropDownOptions>
+            <option>Paragraph &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+            <option>OPTON 2</option>
+            <option>OPTION 3</option>
+            <option>OPTION 4</option>
           </DropDown>
         </InnerContainer2>
-        <InnerContainer2>
+
+        <InnerContainer2 style={{ borderRight: "none" }}>
           <DropDown>
-            <DropDownOptions>Source </DropDownOptions>
-            <DropDownOptions>Option 2</DropDownOptions>
+            <option>Source &nbsp;&nbsp; </option>
+            <option>OPTON 2</option>
+            <option>OPTION 3</option>
+            <option>OPTION 4</option>
           </DropDown>
         </InnerContainer2>
       </Container1>
@@ -104,11 +109,21 @@ const SecondaryForm = () => {
       <Container2></Container2>
 
       <Container3>
-        <TextFormat>Text Format</TextFormat>
+        <TextFormat>
+          <p>Text Format</p>
+          <TextFormatRight>
+            <p style={{ color: "#18A0FB" }}>About text formats</p>
+            <BsQuestionCircle />
+          </TextFormatRight>
+        </TextFormat>
+
         <DropDown
           style={{ border: "2px solid grey", width: "100%", padding: "5px" }}
         >
-          <DropDownOptions>Full HTML</DropDownOptions>
+          <option>Full HTML</option>
+          <option>OPTON 2</option>
+          <option>OPTION 3</option>
+          <option>OPTION 4</option>
         </DropDown>
       </Container3>
     </Wrapper>
