@@ -125,7 +125,7 @@ function Navbar() {
               <Online>Online</Online>
             </ProfileInfo>
           </Profile>
-          <NavTitle>S tudent</NavTitle>
+          <NavTitle>Student</NavTitle>
           <NavItem>
             <RxDashboard />
             <NavItemTitle>Dashboard</NavItemTitle>
