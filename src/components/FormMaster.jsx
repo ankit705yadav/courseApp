@@ -29,6 +29,7 @@ const Input = styled.input`
   padding: 12px;
   width: 100%;
   margin: 10px 0 15px 0;
+  color: grey;
 `;
 
 const DropDown = styled.select`
@@ -39,12 +40,23 @@ const DropDown = styled.select`
   background-color: #ecf1f4;
   border-radius: 7px;
   width: 100%;
+  color: grey;
 `;
 
 const Options = styled.option``;
+
 const Span = styled.span`
   color: red;
 `;
+
+const Button = styled.button`
+  border: none;
+  border-radius: 7px;
+  background-color: #3867c1;
+  color: white;
+  padding: 12px 20px;
+`;
+
 const FormMaster = () => {
   return (
     <Wrapper>
@@ -66,7 +78,7 @@ const FormMaster = () => {
           Course <Span>&#42;</Span>
         </InputTitle>
         <DropDown>
-          <Options disabled>-Select a value-</Options>
+          <Options default>-Select a value-</Options>
           <Options>B-Tech</Options>
           <Options>M-Tech</Options>
           <Options>MCA</Options>
@@ -102,7 +114,7 @@ const FormMaster = () => {
           Running Week Day Name <Span>&#42;</Span>
         </InputTitle>
         <DropDown name="-Select a value-">
-          <Options disabled>-Select a value-</Options>
+          <Options default>-Select a value-</Options>
           <Options>Sunday</Options>
           <Options>Monday</Options>
           <Options>Tuesday</Options>
@@ -117,7 +129,7 @@ const FormMaster = () => {
           Batch CRM <Span>&#42;</Span>
         </InputTitle>
         <DropDown name="-Select a value-">
-          <Options disabled>-Select a value-</Options>
+          <Options default>-Select a value-</Options>
           <Options>1</Options>
           <Options>2</Options>
           <Options>3</Options>
@@ -128,7 +140,7 @@ const FormMaster = () => {
           Company Billing <Span>&#42;</Span>
         </InputTitle>
         <DropDown name="-Select a value-">
-          <Options disabled>-Select a value-</Options>
+          <Options default>-Select a value-</Options>
           <Options>1</Options>
           <Options>2</Options>
           <Options>3</Options>
@@ -140,6 +152,7 @@ const FormMaster = () => {
         </InputTitle>
         <Input placeholder="Yes" />
       </InputWrapper>
+      <Button>Next</Button>
     </Wrapper>
   );
 };
