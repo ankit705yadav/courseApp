@@ -10,33 +10,36 @@ const Wrapper = styled.div`
   padding: 30px;
   justify-content: space-between;
   gap: 20px;
-  align-items: center;
-  width: 100%;
 `;
 
 const Container = styled.div`
-  border: 1px solid red;
   display: flex;
   align-items: start;
   flex-direction: column;
-  height: 1865px;
+  ${"" /* height: 1865px; */}
   width: 100%;
+  gap: 74px;
 `;
 const ContainerInner = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
+  justify-content: space-between;
   width: 100%;
-  border: 1px solid green;
+  border: 1px solid grey;
+  border-radius: 8px;
+  padding: 25px;
+  gap: 25px;
 `;
-const Right = styled.div`
-  width: 60%;
-  border: 1px solid red;
-`;
+
 const Left = styled.div`
   width: 40%;
-  border: 1px solid red;
+`;
+
+const Right = styled.div``;
+
+const P = styled.p`
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 20px;
 `;
 
 export const App = () => {
@@ -51,15 +54,14 @@ export const App = () => {
           </Left>
           <Right>
             <InstallementForm />
+            <P>Primary student T&C</P>
+            <SecondaryForm />
+            <P>T&C 50% Participation</P>
+            <SecondaryForm />
+            <P>Secondry Student T&C</P>
+            <SecondaryForm />
           </Right>
         </ContainerInner>
-        {/* 
-         
-           
-            <SecondaryForm />
-            <SecondaryForm />
-            <SecondaryForm />
-          */}
       </Container>
     </Wrapper>
   );

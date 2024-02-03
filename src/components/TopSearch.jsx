@@ -11,7 +11,6 @@ const Wrapper = styled.div`
 `;
 
 const SearchSection = styled.div`
-  border: 1px solid red;
   display: flex;
 `;
 

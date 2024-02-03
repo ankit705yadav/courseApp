@@ -5,11 +5,11 @@ const Wrapper = styled.div`
   justify-content: space-around;
   align-items: start;
   flex-direction: column;
-  padding: 20px;
   gap: 15px;
 `;
 
-const Header = styled.h2`
+const Header = styled.h1`
+  font-size: 30px;
   font-weignt: bold;
   margin-bottom: 20px;
 `;
@@ -39,6 +39,7 @@ const DropDown = styled.select`
   outline: none;
   background-color: #ecf1f4;
   border-radius: 7px;
+  margin: 10px 0 15px 0;
   width: 100%;
   color: grey;
 `;
@@ -52,6 +53,7 @@ const Span = styled.span`
 const Button = styled.button`
   border: none;
   border-radius: 7px;
+  margin-top: 30px;
   background-color: #3867c1;
   color: white;
   padding: 12px 20px;

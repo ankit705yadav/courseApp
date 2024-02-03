@@ -6,7 +6,7 @@ import { TbLayoutGridAdd } from "react-icons/tb";
 import { BsQuestionCircle } from "react-icons/bs";
 
 const Wrapper = styled.div`
-  border: 2px solid grey;
+  border: 2px solid #bfbfbf;
 `;
 
 const Container1 = styled.div`
@@ -20,7 +20,7 @@ const InnerContainer1 = styled.div`
   justify-content: space-between;
   align-items: center;
   font-size: 22px;
-  border-right: 2px solid grey;
+  border-right: 2px solid #bfbfbf;
   padding-right: 20px;
   margin-right: 15px;
 `;
@@ -30,8 +30,8 @@ const InnerContainer2 = styled.div`
   justify-content: space-between;
   align-items: center;
   font-size: 22px;
-  border-left: 2px solid grey;
-  border-right: 2px solid grey;
+  border-left: 2px solid #bfbfbf;
+  border-right: 2px solid #bfbfbf;
   padding: 0 20px;
 `;
 
@@ -41,18 +41,19 @@ const MiddleContainer = styled.div`
 
 const DropDown = styled.select`
   border: none;
+  outline: none;
   background-color: white;
-  color: grey;
+  color: #bfbfbf;
 `;
 
 const Container2 = styled.div`
   height: 42px;
-  border-top: 2px solid grey;
+  border-top: 2px solid #bfbfbf;
 `;
 
 const Container3 = styled.div`
   padding: 12px;
-  border-top: 2px solid grey;
+  border-top: 2px solid #bfbfbf;
 `;
 
 const TextFormat = styled.div`
@@ -117,7 +118,7 @@ const SecondaryForm = () => {
         </TextFormat>
 
         <DropDown
-          style={{ border: "2px solid grey", width: "100%", padding: "5px" }}
+          style={{ border: "2px solid #bfbfbf", width: "100%", padding: "5px" }}
         >
           <option>Full HTML</option>
           <option>OPTON 2</option>

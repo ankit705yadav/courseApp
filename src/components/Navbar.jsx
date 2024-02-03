@@ -31,7 +31,7 @@ const Nav = styled.div`
   justify-content: start;
   border: 1.5px solid grey;
   border-radius: 7px;
-  width: 255px;
+  width: 320px;
 
   .logout {
     color: red;
@@ -42,8 +42,10 @@ const Nav = styled.div`
   }
 `;
 
-const NavHeader = styled.h3`
-  padding: 24px 24px;
+const NavHeader = styled.h1`
+  font-size: 23px;
+  padding: 24px;
+
   color: #4367b0;
 `;
 
@@ -85,7 +87,7 @@ const NavTitle = styled.div`
 
 const NavItem = styled.div`
   display: flex;
-  margin: 10px 0px;
+  margin: 7px 0px;
   padding-left: 1.5rem;
   color: grey;
   border: 3px solid white;
@@ -192,11 +194,11 @@ function Navbar() {
       </NavItem>
       <NavItem>
         <MdOutlineVideocam />
-        <NavItemTitle>Video Stream Approval Request</NavItemTitle>
+        <NavItemTitle>Video Stream Approval</NavItemTitle>
       </NavItem>
       <NavItem>
         <MdOutlinePhotoCamera />
-        <NavItemTitle>Partial Payment Approval Request</NavItemTitle>
+        <NavItemTitle>Partial Payment Approval</NavItemTitle>
       </NavItem>
       <NavItem>
         <IoPersonAddOutline />
