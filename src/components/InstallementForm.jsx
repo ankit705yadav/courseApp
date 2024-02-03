@@ -26,17 +26,12 @@ const H1 = styled.h1`
 const SubHead = styled.div`
   display: flex;
   justify-content: space-between;
-  ${"" /* align-items: start; */}
-  ${"" /* flex-direction: row; */}
-  ${"" /* width: 100%; */}
   gap: 5px;
 `;
 
 const Div = styled.div`
   display: flex;
   flex-direction: column;
-
-  ${"" /* width: 100%; */};
 `;
 
 const Label = styled.label`

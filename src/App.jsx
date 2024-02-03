@@ -16,7 +16,6 @@ const Container = styled.div`
   display: flex;
   align-items: start;
   flex-direction: column;
-  ${"" /* height: 1865px; */}
   width: 100%;
   gap: 74px;
 `;
@@ -24,7 +23,7 @@ const ContainerInner = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100%;
-  border: 1px solid grey;
+  border: 1px solid #bfbfbf;
   border-radius: 8px;
   padding: 25px;
   gap: 25px;
